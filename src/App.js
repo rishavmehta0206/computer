@@ -4,6 +4,7 @@ import Items from "./Components/Items";
 import Navbar from "./Components/Navbar";
 import Newsletter from "./Components/Newsletter";
 import Product from "./Components/Product";
+import Blog from "./Pages/Blog";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
@@ -19,6 +20,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/blog" element={<Blog />} />
           </Route>
           <Route path="/extra">
             <Route index element={<Test />} />
