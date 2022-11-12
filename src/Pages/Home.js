@@ -4,6 +4,7 @@ import Product from "../Components/Product";
 import Items from "../Components/Items";
 import Newsletter from "../Components/Newsletter";
 import Slider from "../Components/Slider";
+import Review from "../Components/Review";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <Slider />
       <Product />
+      <Review />
       <Items />
       <Newsletter />
     </div>

@@ -7,8 +7,10 @@ import Product from "./Components/Product";
 import Blog from "./Pages/Blog";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
+import News from "./Pages/News";
 import Register from "./Pages/Register";
 import SharedLayout from "./Pages/SharedLayout";
+import Single from "./Pages/Single";
 import Test from "./Pages/Test";
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<Single />} />
+            <Route path="/newsletter" element={<News />} />
           </Route>
           <Route path="/extra">
             <Route index element={<Test />} />

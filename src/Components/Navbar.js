@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="text-black flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 top-0 sticky z-10 bg-white">
-      <h1 className="w-full text-3xl font-bold text-teal-400">Mehta.</h1>
+      <h1
+        className="cursor-pointer w-full text-3xl font-bold text-teal-400"
+        onClick={() => navigate("/")}
+      >
+        Mehta.
+      </h1>
       <ul className="md:flex hidden gap-8">
         <li className="group truncate">
           <Link to="/">Home</Link>
@@ -61,9 +67,7 @@ const Navbar = () => {
             <div className="bg-white h-1 relative left-[-101%] group-hover:left-0 duration-200 ease-linear"></div>
           </li>
           <li className="mb-6 border-b cursor-pointer border-black">Company</li>
-          <li className="mb-6 border-b cursor-pointer border-black">
-            Blog
-          </li>
+          <li className="mb-6 border-b cursor-pointer border-black">Blog</li>
           <li className="mb-6 border-b cursor-pointer border-black">About</li>
           <li className="mb-6 border-b cursor-pointer border-black">Contact</li>
           <li className="mb-6 border-b cursor-pointer border-black">
