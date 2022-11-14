@@ -47,7 +47,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="max-w-[1240px] mx-auto relative h-[500px]">
+    <div className="max-w-[1240px] mx-auto relative h-[500px] mb-[80px] mt-[80px]">
       <div className="max-w-[800px] mx-auto w-[100%] h-[100%] flex overflow-hidden">
         {data?.map((item) => {
           return (
