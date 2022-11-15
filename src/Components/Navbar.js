@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="bg-red-500 h-1 relative left-[-101%] group-hover:left-0 duration-300 ease-linear"></div>
         </li>
         <li className="group truncate">
-          Company
+          <Link to="/company">Company</Link>
           <div className="bg-red-500 h-1 relative left-[-101%] group-hover:left-0 duration-300 ease-linear"></div>
         </li>
         <li className="group truncate">
