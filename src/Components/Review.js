@@ -8,7 +8,7 @@ const Review = () => {
   return (
     <div className="max-w-[1240px] mx-auto p-4 grid md:grid-cols-4 gap-4 my-20">
       <h1 className="text-3xl font-semibold col-span-4">Our Reviews</h1>
-      <div className="md:col-span-2 shadow-2xl w-full p-8 flex flex-col gap-4 bg-purple-500 rounded-xl">
+      <div className="col-span-full md:col-span-2 shadow-2xl w-full p-8 flex flex-col gap-4 bg-purple-500 rounded-xl">
         <div className="flex gap-[30px]">
           <img className="object-fit rounded-full" src={daniel} />
           <div>
@@ -32,7 +32,7 @@ const Review = () => {
           inventore harum explicabo a natus qui iure adipisci rem.
         </span>
       </div>
-      <div className="md:col-span-1 shadow-2xl w-full p-8 flex flex-col gap-4 bg-gray-700 rounded-xl">
+      <div className="col-span-full md:col-span-1 shadow-2xl w-full p-8 flex flex-col gap-4 bg-gray-700 rounded-xl">
         <div className="flex gap-[30px]">
           <img className="object-fit rounded-full" src={jonathan} />
           <div>
@@ -51,7 +51,7 @@ const Review = () => {
           nobis, eligendi ipsum quas cupiditate magni? Qui?
         </span>
       </div>
-      <div className="md:col-span-1 md:row-span-2 shadow-2xl w-full p-8 flex flex-col gap-4 bg-white-700 rounded-xl">
+      <div className="col-span-full md:col-span-1 md:row-span-2 shadow-2xl w-full p-8 flex flex-col gap-4 bg-white-700 rounded-xl">
         <div className="flex gap-[30px]">
           <img className="object-fit rounded-full" src={kira} />
           <div>
@@ -76,7 +76,7 @@ const Review = () => {
           officia repellat doloremque in illum quaerat?
         </span>
       </div>
-      <div className="shadow-2xl w-full p-8 flex flex-col gap-4 bg-white-700 rounded-xl">
+      <div className="col-span-full md:col-span-1 shadow-2xl w-full p-8 flex flex-col gap-4 bg-white-700 rounded-xl">
         <div className="flex gap-[30px]">
           <img className="object-fit rounded-full" src={jeanette} />
           <div>
@@ -93,7 +93,7 @@ const Review = () => {
           tenetur?
         </span>
       </div>
-      <div className="md:col-span-2 shadow-2xl w-full p-8 flex flex-col gap-4 bg-black rounded-xl">
+      <div className="col-span-full md:col-span-2 shadow-2xl w-full p-8 flex flex-col gap-4 bg-black rounded-xl">
         <div className="flex gap-[30px]">
           <img className="object-fit rounded-full" src={patrick} />
           <div>

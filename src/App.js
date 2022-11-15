@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import Newsletter from "./Components/Newsletter";
 import Product from "./Components/Product";
 import Blog from "./Pages/Blog";
+import Company from "./Pages/Company";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import News from "./Pages/News";
@@ -25,6 +26,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<Single />} />
             <Route path="/newsletter" element={<News />} />
+            <Route path="/company" element={<Company />} />
           </Route>
           <Route path="/extra">
             <Route index element={<Test />} />
