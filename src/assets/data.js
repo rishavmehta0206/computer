@@ -31,6 +31,7 @@ export const people = [
   {
     id: 1,
     name: "Daniel",
+    role: "Developer",
     image:
       "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     about:
@@ -39,6 +40,7 @@ export const people = [
   {
     id: 2,
     name: "Jeanette",
+    role: "Sales",
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     about:
@@ -47,6 +49,7 @@ export const people = [
   {
     id: 3,
     name: "Jonathan",
+    role: "Social Media",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     about:
@@ -55,6 +58,7 @@ export const people = [
   {
     id: 4,
     name: "Kira",
+    role: "Human Resource",
     image:
       "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     about:
@@ -63,6 +67,7 @@ export const people = [
   {
     id: 5,
     name: "Patrick",
+    role: "Manager",
     image:
       "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     about:

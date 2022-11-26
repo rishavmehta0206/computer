@@ -2,22 +2,23 @@ import React, { useState } from "react";
 import { BsChevronDoubleRight, BsFacebook, BsGithub } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { IoMdQuote } from "react-icons/io";
 
 const Tabs = ({ client }) => {
   const [index, setIndex] = useState(0);
   const [personIndex, setPersonIndex] = useState(0);
-  const { id, name, image, about } = client[index];
+  const { id, name, image, about,role } = client[index];
 
   const handleIndexes = (personIndex) => {
     setIndex(personIndex);
     setPersonIndex(personIndex);
-    // if (personIndex === index) {
-    //   document.querySelector("#slide").style.transform = `translateX(0%)`;
-    // }
   };
 
   return (
     <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 text-center p-4 gap-3 ">
+      <h1 className="w-full col-span-3 text-left text-2xl font-light mb-[30px]">
+        Meet Our Employees.
+      </h1>
       <div className="md:col-span-1 overflow-hidden">
         {client.map((person, personIndex) => {
           const { id, name } = person;
@@ -54,13 +55,23 @@ const Tabs = ({ client }) => {
       </div>
       <div
         id="slide"
-        className={`md:col-span-2 flex items-center flex-col p-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white overflow-hidden `}
+        className={`relative md:col-span-2 flex items-center flex-col p-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white overflow-hidden `}
       >
-        <img
-          className="object-cover rounded-full h-[150px] w-[150px]"
-          src={image}
-        />
-        <h1 className={`font-semibold text-4xl my-[20px] w-full`}>{name}</h1>
+        <div className="relative rounded-full h-[150px] w-[150px] z-10 group-hover">
+          <img
+            className="object-cover rounded-full h-[100%] w-[100%]"
+            src={image}
+          />
+          <div className="absolute h-[100%] w-[100%] rounded-full bg-white top-[-5px] right-[-10px] -z-10"></div>
+          <div className="absolute left-[-2px] top-[-11px] flex items-center justify-center h-[50px] w-[50px] p-2 rounded-full bg-white">
+            <IoMdQuote
+              size={40}
+              className="text-teal-400"
+            />
+          </div>
+        </div>
+        <h1 className={`font-semibold text-4xl mt-[20px] w-full`}>{name}</h1>
+        <h1 className="font-light text-xl mb-[30px]">{role}</h1>
         <p className="text-lg">{about}</p>
         <div className="flex gap-4 mt-[30px] w-full justify-start p-4">
           <BsFacebook size={30} className="cursor-pointer" />

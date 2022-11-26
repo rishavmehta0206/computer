@@ -7,7 +7,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="text-black flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 top-0 sticky z-10 bg-white">
+    <div className="text-black flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 top-0 sticky z-20 bg-white">
       <h1
         className="cursor-pointer w-full text-3xl font-bold text-teal-400"
         onClick={() => navigate("/")}
